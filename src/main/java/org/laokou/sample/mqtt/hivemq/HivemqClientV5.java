@@ -334,19 +334,19 @@ public class HivemqClientV5 {
 
     private void checkTopicAndQos(String[] topics, int[] qosArray) {
         if (topics == null || qosArray == null) {
-            throw new IllegalArgumentException("【" + "Hivemq" + "】 => Topics and QoS arrays cannot be null");
+            throw new IllegalArgumentException("【" + "Hivemq-V5" + "】 => Topics and QoS arrays cannot be null");
         }
         if (topics.length != qosArray.length) {
-            throw new IllegalArgumentException("【" + "Hivemq" + "】 => Topics and QoS arrays must have the same length");
+            throw new IllegalArgumentException("【" + "Hivemq-V5" + "】 => Topics and QoS arrays must have the same length");
         }
         if (topics.length == 0) {
-            throw new IllegalArgumentException("【" + "Hivemq" + "】 => Topics array cannot be empty");
+            throw new IllegalArgumentException("【" + "Hivemq-V5" + "】 => Topics array cannot be empty");
         }
     }
 
     private void checkTopic(String[] topics) {
         if (topics.length == 0) {
-            throw new IllegalArgumentException("【" + "Hivemq" + "】 => Topics array cannot be empty");
+            throw new IllegalArgumentException("【" + "Hivemq-V5" + "】 => Topics array cannot be empty");
         }
     }
 
